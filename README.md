@@ -13,7 +13,7 @@ To ensure the simulation works correctly, please configure your NetLogo Interfac
 
 ### 1. Sliders
 * `beta-cell-destruction-rate`: Range 0 to 100. Controls the probability that an active Beta cell is destroyed during each tick.
-* `injection-dose`: Range 10 to 500. Determines the amount of insulin added to the bloodstream when the "Inject Insulin" button is pressed.
+* `insulin-injection-dose`: Range 10 to 500. Determines the amount of insulin added to the bloodstream when the "Inject Insulin" button is pressed.
 
 ### 2. Buttons
 * **Inject Insulin**: Command `inject-insulin`. Spawns insulin molecules into the bloodstream to help sequester glucose.
@@ -29,7 +29,7 @@ The following procedures have been integrated into the code to manage the T1D lo
 If you encounter errors when checking the code:
 1.  **Duplicate Procedures**: Ensure you have removed any older versions of `make-pancreas` or `adjust-hormones`.
 2.  **Breed Definitions**: Ensure the `pancreatic-cells` breed is removed and replaced by `alpha-cells` and `beta-cells` definitions.
-3.  **Variable Names**: Ensure slider names in the Interface tab exactly match `beta-cell-destruction-rate` and `injection-dose`.
+3.  **Variable Names**: Ensure slider names in the Interface tab exactly match `beta-cell-destruction-rate` and `insulin-injection-dose`.
 
 ## Credits
 This simulation is based on the original blood glucose model by Uri Wilensky (2017).
